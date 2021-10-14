@@ -2,7 +2,8 @@
   "name": "component_library",
   "version": "0.0.1",
   "files": [
-    "dist"
+    "dist/*",
+    "src/*"
   ],
   "main": "./dist/component_library.umd.js",
   "module": "./dist/component_library.es.js",
