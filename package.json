@@ -1,0 +1,27 @@
+{
+  "name": "component_library",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/component_library.umd.js",
+  "module": "./dist/component_library.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/component_library.es.js",
+      "require": "./dist/component_library.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.16"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "vite": "^2.6.4"
+  }
+}
