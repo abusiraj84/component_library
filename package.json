@@ -1,5 +1,6 @@
 {
   "name": "component_library",
+  "author": "Raine Petersen",
   "version": "0.0.1",
   "files": [
     "dist/*",

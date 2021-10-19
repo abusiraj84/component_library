@@ -2,7 +2,7 @@
   <div>
     <button
       @click="$emit('click')"
-      class="text-white bg-solcius-blue py-2 px-4 rounded-full"
+      class="text-white bg-blue-500 py-2 px-4 rounded-full"
     >
       {{ label }}
     </button>
