@@ -1,4 +1,5 @@
 import * as components from './index';
+import './index.css';
 
 const ComponentLibrary = {
   install(Vue) {

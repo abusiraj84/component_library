@@ -1,11 +1,19 @@
 <template>
   <div>
-    <input placeholder="hello world" />
+    <button
+      @click="$emit('click')"
+      class="text-white bg-solcius-blue py-2 px-4 rounded-full"
+    >
+      {{ label }}
+    </button>
   </div>
 </template>
 
 <script>
 export default {
   name: 'btn',
+  props: {
+    label: { type: String, required: true, default: 'Click Me' },
+  },
 };
 </script>
