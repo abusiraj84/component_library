@@ -75,3 +75,7 @@ dist
 
 # FuseBox cache
 .fusebox/
+
+# Storybook output files
+.storybook
+

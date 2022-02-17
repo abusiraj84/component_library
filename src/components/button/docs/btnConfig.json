@@ -1,0 +1,72 @@
+{
+    "args": {
+     "name": "التالي",
+     "type": "contained",
+     "isIcon":true,
+     "icon":"left"
+ 
+    
+   },
+   "argTypes": {
+    "header": {
+      "table": {
+        "disable": true
+      }
+    },
+        "name": {
+       "table": {
+         "category": "Header"
+       }
+     }, 
+      "isIcon": {
+       "control": {
+         "type": "boolean"
+       },
+       "defaultValue": "3xl"
+     },
+     "icon": {
+       "control": {
+         "type": "radio",
+         "options": [
+           "left",
+           "help",
+           "info",
+           "user"
+        
+         ]
+       },
+       "defaultValue": "3xl"
+     },
+   
+  
+
+     "type": {
+       "control": {
+         "type": "radio",
+         "options": [
+           "contained",
+            "outlined",
+            "text"    
+         ]
+       },
+       "defaultValue": "primary"
+     },
+     "invert": {
+       "table": {
+         "category": "Footer"
+       }
+     },
+    
+
+     "footer": {
+       "table": {
+         "disable": true
+       }
+     },
+     "default": {
+       "table": {
+         "disable": true
+       }
+     }
+   }
+ }
