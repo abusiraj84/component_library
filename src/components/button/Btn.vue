@@ -15,7 +15,7 @@
       <span>
         <span> {{ name }}</span></span
       >
-      <i class="material-icons text-[18px]">{{ icon }}</i>
+      <i class="material-icons-round text-[18px]">{{ icon }}</i>
 
       <!-- <img src="https://i.pravatar.cc" class="h-6 w-6" /> -->
     </div>
@@ -35,7 +35,7 @@
       @click="clickButton"
     >
       <span> {{ name }}</span>
-      <i class="material-icons text-[18px]">{{ icon }}</i>
+      <i class="material-icons-round text-[18px]">{{ icon }}</i>
     </div>
 
     <!-- Button outlined -->
@@ -59,7 +59,7 @@
       @click="clickButton"
     >
       <span> {{ name }}</span>
-      <i class="material-icons text-[18px]">{{ icon }}</i>
+      <i class="material-icons-round text-[18px]">{{ icon }}</i>
     </div>
 
     <!-- Button Icon -->
@@ -80,7 +80,7 @@
     >
       <span> {{ name }}</span>
 
-      <i class="material-icons text-[18px]">{{ icon }}</i>
+      <i class="material-icons-round text-[18px]">{{ icon }}</i>
     </div>
   </div>
 </template>
@@ -92,7 +92,7 @@ export default {
   props: {
     name: {
       type: String,
-      default: "لا يوجد إسم للزر",
+      default: "زر جديد",
     },
     icon: {
       type: String,

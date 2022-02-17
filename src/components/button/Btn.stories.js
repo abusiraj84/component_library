@@ -14,7 +14,7 @@ export default {
   decorators: [
     () => ({
       template:
-        "<div class='flex justify-center items-center h-[200px]'><story /></div>",
+        "<div class='flex justify-center items-center h-[200px]' dir='rtl'><story /></div>",
     }),
   ],
   // parameters: {

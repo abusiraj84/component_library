@@ -1,10 +1,10 @@
 {
     "args": {
      "name": "التالي",
-     "type": "contained",
-     "icon":"",
      "disabled":false,
-     "bg": "primary"
+     "type": "contained",
+     "bg": "primary",
+     "icon":""
  
     
    },
@@ -25,17 +25,29 @@
          "type": "radio",
          "options": [
            "",
-           "left",
-           "help",
+           "favorite",
+           "home",
            "info",
-           "user"
-        
+           "lock",
+            "search",
+            "arrow_forward ",
+            "arrow_back",
+            "settings",
+            "done"
          ]
        },
-       "defaultValue": "3xl"
+       "defaultValue": ""
      },
-   
-  
+     "bg": {
+       "control": {
+         "type": "radio",
+         "options": [
+           "primary",
+           "secondary"
+         ]
+       },
+       "defaultValue": ""
+     },
 
      "type": {
        "control": {
