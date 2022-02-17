@@ -2,7 +2,8 @@
     "args": {
      "name": "التالي",
      "type": "contained",
-     "icon":""
+     "icon":"",
+     "disabled":false
  
     
    },
@@ -42,6 +43,13 @@
            "contained",
             "outlined",
             "text"    
+         ]
+       },
+       "disable": {
+         "type": "radio",
+         "options": [
+           "true",
+            "false"
          ]
        },
        "defaultValue": "primary"

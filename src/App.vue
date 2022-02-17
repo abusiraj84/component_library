@@ -1,8 +1,22 @@
 <template>
   <div class="h-screen flex justify-center items-center gap-x-5" dir="rtl">
-    <Btn name="تسجيل الدخول" type="contained" @click="onClick"></Btn>
+    <Btn
+      name="تسجيل الدخول"
+      type="contained"
+      icon="person"
+      @click="onClick"
+    ></Btn>
+    <Btn
+      name="تسجيل الدخول"
+      type="contained"
+      disabled="true"
+      icon="person"
+      @click="onClick"
+    ></Btn>
     <Btn name="عضو جديد" type="outlined" @click="onClick"></Btn>
+    <Btn name="عضو جديد" type="outlined" disabled="true" @click="onClick"></Btn>
     <Btn name="تجاهل" type="text" @click="onClick"></Btn>
+    <Btn name="تجاهل" type="text" disabled="true" @click="onClick"></Btn>
   </div>
 </template>
 <script>

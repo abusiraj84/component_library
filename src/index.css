@@ -5,8 +5,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "AvenirArabic";
+  src: url("https://requestat-web.vercel.app/_nuxt/fonts/AvenirArabic-Medium.6601465.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "AvenirArabic";
+  src: url("https://requestat-web.vercel.app/_nuxt/fonts/AvenirArabic-Light.df9f5f4.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "AvenirArabic";
+  src: url("https://requestat-web.vercel.app/_nuxt/fonts/AvenirArabic-Heavy.09d35c5.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "AvenirArabic";
+  src: url("https://requestat-web.vercel.app/_nuxt/fonts/AvenirArabic-Black.9c4ecc9.otf");
+  font-weight: 900;
+}
 * {
-  font-family: "Tajawal";
+  font-family: "AvenirArabic";
 }
 
 :root {
