@@ -3,7 +3,8 @@
      "name": "التالي",
      "type": "contained",
      "icon":"",
-     "disabled":false
+     "disabled":false,
+     "bg": "primary"
  
     
    },

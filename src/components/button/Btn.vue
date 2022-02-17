@@ -30,6 +30,7 @@
         disabled
           ? 'cursor-not-allowed  bg-disabled  text-disabled'
           : ' cursor-pointer bg-primary text-inverted hover:brightness-110',
+        bg === 'secondary' && 'bg-secondary',
       ]"
       @click="clickButton"
     >
@@ -91,7 +92,7 @@ export default {
   props: {
     name: {
       type: String,
-      default: "انضم للجلسة",
+      default: "لا يوجد إسم للزر",
     },
     icon: {
       type: String,
@@ -105,6 +106,10 @@ export default {
     disabled: {
       type: Boolean,
       default: false,
+    },
+    bg: {
+      type: String,
+      default: "primary",
     },
   },
   data() {
