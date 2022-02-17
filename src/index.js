@@ -1,2 +1,2 @@
-export { default as btn } from './components/buttons';
-export { default as icon } from './components/utilities/icon';
+export { default as Btn } from "./components/button/Btn.vue";
+export { default as icon } from "./components/utilities/icon";

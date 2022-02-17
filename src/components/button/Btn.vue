@@ -1,42 +1,90 @@
 <template>
-  <div dir="rtl" class="text-[14px] font-bold">
+  <div class="text-[14px] font-bold">
+    <!-- Button Text -->
     <div
       v-if="type === 'text'"
-      :class="isIcon && 'flex items-center gap-x-[12.9px]'"
-      class="py-[0px] px-[0px] w-fit cursor-pointer text-base-color hover:text-active hover:border-primary border-b-[1.5px] border-inverted"
+      :class="icon && 'flex items-center gap-x-[12.9px]'"
+      class="
+        py-[0px]
+        px-[0px]
+        w-fit
+        cursor-pointer
+        text-base-color
+        hover:text-active
+        hover:border-primary
+        border-b-[1.5px] border-inverted
+      "
       @click="clickButton"
     >
-      {{ name }}
-      <svg-icon v-if="isIcon" :icon-class="icon" class="text-base-color" />
+      <span>
+        <span> {{ name }}</span></span
+      >
+      <svg-icon v-if="icon" :icon-class="icon" class="text-base-color" />
 
       <!-- <img src="https://i.pravatar.cc" class="h-6 w-6" /> -->
     </div>
+
+    <!-- Button Contained -->
+
     <div
       v-if="type === 'contained'"
-      class="rounded-[12px] py-[6px] px-[11px] w-fit cursor-pointer bg-primary text-inverted hover:brightness-110"
-      :class="isIcon && 'flex items-center gap-x-[12.9px]'"
+      class="
+        rounded-[12px]
+        py-[6px]
+        px-[11px]
+        w-fit
+        cursor-pointer
+        bg-primary
+        text-inverted
+        hover:brightness-110
+      "
+      :class="icon && 'flex items-center gap-x-[12.9px]'"
       @click="clickButton"
     >
-      {{ name }}
-      <svg-icon v-if="isIcon" :icon-class="icon" class="text-inverted" />
+      <span> {{ name }}</span>
+      <svg-icon v-if="icon" :icon-class="icon" class="text-inverted" />
     </div>
+
+    <!-- Button outlined -->
+
     <div
       v-if="type === 'outlined'"
       :class="icon && 'flex items-center gap-x-[12.9px]'"
-      class="rounded-[12px] py-[6px] px-[11px] w-fit cursor-pointer border-[2px] border-base text-base-color hover:bg-muted"
+      class="
+        rounded-[12px]
+        py-[6px]
+        px-[11px]
+        w-fit
+        cursor-pointer
+        border-[2px] border-base
+        text-base-color
+        hover:bg-muted
+      "
       @click="clickButton"
     >
-      {{ name }}
-      <svg-icon v-if="isIcon" :icon-class="icon" class="text-base-color" />
+      <span> {{ name }}</span>
+      <svg-icon v-if="icon" :icon-class="icon" class="text-base-color" />
     </div>
+
+    <!-- Button Icon -->
+
     <div
       v-if="type === 'icon'"
-      :class="isIcon && 'flex items-center gap-x-[12.9px]'"
-      class="rounded-[12px] py-[6px] px-[11px] w-fit cursor-pointer border-[2px] border-base text-base-color hover:bg-muted"
+      :class="icon && 'flex items-center gap-x-[12.9px]'"
+      class="
+        rounded-[12px]
+        py-[6px]
+        px-[11px]
+        w-fit
+        cursor-pointer
+        border-[2px] border-base
+        text-base-color
+        hover:bg-muted
+      "
     >
-      {{ name }}
+      <span> {{ name }}</span>
 
-      <svg-icon v-if="isIcon" :icon-class="icon" class="text-base-color" />
+      <svg-icon v-if="icon" :icon-class="icon" class="text-base-color" />
     </div>
   </div>
 </template>
@@ -47,40 +95,36 @@ export default {
   props: {
     name: {
       type: String,
-      default: 'انضم للجلسة',
+      default: "انضم للجلسة",
     },
     icon: {
       type: String,
-      default: '',
-    },
-    isIcon: {
-      type: Boolean,
-      default: false,
+      default: "",
     },
 
     type: {
       type: String,
-      default: 'contained',
+      default: "contained",
     },
   },
   data() {
-    return {}
+    return {};
   },
   head: {},
   computed: {
     contained() {
-      return `bg-primary text-inverted`
+      return `bg-primary text-inverted`;
     },
     outlined() {
-      return `border-[1.5px] border-base text-base-color`
+      return `border-[1.5px] border-base text-base-color`;
     },
   },
   watch: {},
   mounted() {},
   methods: {
     clickButton() {
-      this.$emit('buttonClicked', `لقد قمت بالضغط على زر تسجيل الدخول`)
+      this.$emit("buttonClicked", `لقد قمت بالضغط على زر تسجيل الدخول`);
     },
   },
-}
+};
 </script>

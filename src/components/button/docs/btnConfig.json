@@ -2,8 +2,7 @@
     "args": {
      "name": "التالي",
      "type": "contained",
-     "isIcon":true,
-     "icon":"left"
+     "icon":""
  
     
    },
@@ -18,16 +17,12 @@
          "category": "Header"
        }
      }, 
-      "isIcon": {
-       "control": {
-         "type": "boolean"
-       },
-       "defaultValue": "3xl"
-     },
+
      "icon": {
        "control": {
          "type": "radio",
          "options": [
+           "",
            "left",
            "help",
            "info",
